@@ -44,6 +44,7 @@ def readCSV(fileName):
         strList += line
         line = file.readline()
     strList = strList.split(",")
+    file.close()
 
     for index in range(len(strList)):
         strList[index] = int(strList[index])
