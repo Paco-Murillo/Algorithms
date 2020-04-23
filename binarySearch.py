@@ -1,3 +1,7 @@
+# A01374561 José Francisco Murillo Lozano
+# A01376544 Mariana Paola Caballero Cabrera
+# A01377744 Alejadro Torices Oliva
+
 def binarySearch(list, value):
     print(list)
     index = (len(list)-1)//2

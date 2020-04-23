@@ -1,4 +1,6 @@
 # A01374561 José Francisco Murillo Lozano
+# A01376544 Mariana Paola Caballero Cabrera
+# A01377744 Alejadro Torices Oliva
 
 def bucketSort(list):
     pass
@@ -32,7 +34,7 @@ def menu():
     print("%2d. QuickSort     Algorithm" % 4)
     print("%2d. RadixSort     Algorithm" % 5)
     print("%2d. MergeSort     Algorithm\n" % 6)
-    # print("Enter 0 or less to exit.\n")
+    print("Enter 0 or less to exit.\n")
     return int(input("Select one of the above algorithms to run.\nEnter its number: "))
 
 
@@ -55,8 +57,7 @@ def readCSV(fileName):
 def main():
     list = readCSV("numbers.txt")
     election = menu()
-    run = True
-    while run:  # election <= 0
+    while election > 0:  # election <= 0
         if election == 1:
             print(bucketSort(list))
         elif election == 2:
@@ -69,7 +70,11 @@ def main():
             print(radixSort(list))
         elif election == 6:
             print(mergeSort(list))
-
-        run = bool(int(input("Do you want to run the menu again? '1' or '0'\n")))
+        else:
+            print("Ingresa una opcion correcta")
+        if bool(int(input("Do you want to run the menu again? '1' or '0'\n"))):
+            election = menu()
+        else:
+            return election
 
 main()
