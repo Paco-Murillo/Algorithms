@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acef2de7-2157-4af7-b87b-b6f45d3692d8" name="Default Changelist" comment="" />
+    <list default="true" id="acef2de7-2157-4af7-b87b-b6f45d3692d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jfml.py" beforeDir="false" afterPath="$PROJECT_DIR$/jfml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration name="jfml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jfml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.jfml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588045664042</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="quickSort implementation">
+      <created>1588045958044</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588045958044</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -53,10 +93,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="quickSort implementation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="227" y="23" key="CommitChangelistDialog2" timestamp="1588045663715">
+    <state x="337" y="23" key="#jfml" timestamp="1588046316881">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state x="337" y="23" key="#jfml/0.23.1280.728@0.23.1280.728" timestamp="1588046316881" />
+    <state x="227" y="23" key="CommitChangelistDialog2" timestamp="1588045957851">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="227" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1588045663715" />
+    <state x="227" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1588045957851" />
+    <state width="1280" height="188" key="GridCell.Tab.0.bottom" timestamp="1588046618460">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1280" height="188" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1588046618460" />
+    <state width="1280" height="188" key="GridCell.Tab.0.center" timestamp="1588046618458">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1280" height="188" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1588046618458" />
+    <state width="1280" height="188" key="GridCell.Tab.0.left" timestamp="1588046618456">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1280" height="188" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1588046618456" />
+    <state width="1280" height="188" key="GridCell.Tab.0.right" timestamp="1588046618459">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1280" height="188" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1588046618459" />
+    <state x="240" y="126" key="Vcs.Push.Dialog.v2" timestamp="1588045960551">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="240" y="126" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1588045960551" />
     <state x="431" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588045609304">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
