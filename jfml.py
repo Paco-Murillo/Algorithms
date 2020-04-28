@@ -14,8 +14,24 @@ def bubbleSort(list):
     pass
 
 
-def quickSort(list):
-    pass
+def divide(list, first, last):
+    i = j = first
+    print(list)
+
+    while j < last:
+        if list[j] <= list[last]:
+            list[i], list[j] = list[j], list[i]
+            i += 1
+        j += 1
+    list[i], list[last] = list[last], list[i]
+    return i
+
+
+def quickSort(list, first, last):
+    if first < last:
+        index = divide(list, first, last)
+        quickSort(list, first, index-1)
+        quickSort(list, index+1, last)
 
 
 def radixSort(list):
@@ -65,7 +81,7 @@ def main():
         elif election == 3:
             print(bubbleSort(list))
         elif election == 4:
-            print(quickSort(list))
+            quickSort(list, 0, len(list)-1)
         elif election == 5:
             print(radixSort(list))
         elif election == 6:
