@@ -38,7 +38,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588038756581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="quickSort implementation">
+      <created>1588045664042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588045664042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -46,13 +53,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="quickSort implementation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="227" y="23" key="CommitChangelistDialog2" timestamp="1588038756333">
+    <state x="227" y="23" key="CommitChangelistDialog2" timestamp="1588045663715">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="227" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1588038756333" />
-    <state x="431" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588038713186">
+    <state x="227" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1588045663715" />
+    <state x="431" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588045609304">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="431" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.726@0.23.1280.726" timestamp="1588038713186" />
+    <state x="431" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.726@0.23.1280.726" timestamp="1588045609304" />
   </component>
 </project>
