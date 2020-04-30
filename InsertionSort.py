@@ -1,11 +1,15 @@
-import time
+# A01374561 José Francisco Murillo Lozano
+# A01376544 Mariana Paola Caballero Cabrera
+# A01377744 Alejadro Torices Oliva
 
+import time
 
 def insertionSort(list):
     for index in range(1, len(list)):
         value = list[index]
         for indexSort in range(index):
             if value < list[indexSort]:
+                print(list)
                 list.pop(index)
                 list.insert(indexSort, value)
                 break
@@ -26,9 +30,10 @@ def divide(list, first, last):
 def quickSort(list, first, last):
     if first < last:
         index = divide(list, first, last)
+        print(list)
         quickSort(list, first, index-1)
         quickSort(list, index+1, last)
-    print(list)
+    return list
 
 
 def readCSV(fileName):
@@ -59,12 +64,13 @@ def main():
     election = menu()
     while 3 > election > 0:
         list = readCSV(input("Insert the name of the text file with the input (with extension): "))
+        print("\n")
         if election == 1:
             startTime = time.time()
             print("\n\n%s\nExecuted in %s seconds \n\n" % (insertionSort(list), (time.time()-startTime)))
         if election == 2:
             startTime = time.time()
-            print("\n\n%s\nExecuted in %s seconds \n\n" % (quickSort(list, 0, len(list)), (time.time() - startTime)))
+            print("\n\n%s\nExecuted in %s seconds \n\n" % (quickSort(list, 0, len(list)-1), (time.time() - startTime)))
         election = menu()
 
 main()
