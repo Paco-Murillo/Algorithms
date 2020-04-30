@@ -12,7 +12,7 @@ def readFile(fileName):
     line = file.readline()
     variableLine = file.readline()
     for i in range(len(variableLine)-1):
-        x.append(int(variableLine[i]))
+        x.append(bool(variableLine[i]))
 
     while line != "":
         strList += line
