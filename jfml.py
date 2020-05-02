@@ -2,12 +2,42 @@
 # A01376544 Mariana Paola Caballero Cabrera
 # A01377744 Alejadro Torices Oliva
 
+
+import math
+
+
 def bucketSort(list):
-    pass
+    biggest = 0
+
+    for number in list:
+        if number > biggest:
+            biggest = number
+
+    buckets = [[0, 0]] * (biggest+1)
+
+    for number in list:
+        if buckets[number][0] != number or number == 0:
+            buckets[number][0] = number
+        buckets[number][1] += 1
+
+    new_list = []
+
+    for index in range(biggest+1):
+        count = buckets[index][1]
+        if count == 0:
+            continue
+        number = buckets[index][0]
+        for times in range(count):
+            new_list.append(number)
+
+    return new_list
+
+
 
 
 def insertionSort(list):
     pass
+
 
 
 def bubbleSort(list):
