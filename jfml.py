@@ -17,12 +17,14 @@ def bucketSort(list):
 
     for number in list:
         if buckets[number][0] != number or number == 0:
-            buckets[number][0] = number
+            buckets.insert(number, [number, 0])
+            buckets.pop(number+1)
         buckets[number][1] += 1
+        print(buckets)
 
     new_list = []
 
-    for index in range(biggest+1):
+    for index in range(len(buckets)):
         count = buckets[index][1]
         if count == 0:
             continue
