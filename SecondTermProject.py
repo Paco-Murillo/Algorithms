@@ -58,6 +58,7 @@ def bubbleSort(list):
                 list[j] = list[j + 1]
                 list[j + 1] = temp
             print(list)
+    return list
 
 
 def divide(list, first, last):
