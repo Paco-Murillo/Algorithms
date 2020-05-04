@@ -38,7 +38,15 @@ def bucketSort(list):
 
 
 def insertionSort(list):
-    pass
+    for index in range(1, len(list)):
+        value = list[index]
+        for indexSort in range(index):
+            if value < list[indexSort]:
+                print(list)
+                list.pop(index)
+                list.insert(indexSort, value)
+                break
+    return list
 
 
 
@@ -66,11 +74,71 @@ def quickSort(list, first, last):
         quickSort(list, index+1, last)
 
 
+def countingSort(list, position):
+    size = len(list)
+    count = [0] * 10
+
+    for index in range(0, size):
+        countIndex = list[index] // position
+        count[countIndex % 10] += 1
+
+    for index in range(1, 10):
+        count[index] += count[index - 1]
+
+    output = [0] * size
+
+    for index in range(size-1, -1, -1):
+        countIndex = list[index] // position
+        output[count[countIndex % 10] - 1] = list[index]
+        count[countIndex % 10] -= 1
+
+    for index in range(0, size):
+        list[index] = output[index]
+
+    print(list)
+
+
 def radixSort(list):
-    return list
+    biggestElement = max(list)
+
+    for index in range(len(str(biggestElement))):
+        position = 10**index
+        countingSort(list, position)
 
 
 def mergeSort(list):
+    if len(list) == 1:
+        return
+
+    midpoint = len(list) // 2
+    leftSide = list[:midpoint]
+    rightSide = list[midpoint:]
+
+    mergeSort(leftSide)
+    mergeSort(rightSide)
+
+    leftIndex = 0
+    rightIndex = 0
+    mainIndex = 0
+
+    while leftIndex < len(leftSide) and rightIndex < len(rightSide):
+        if leftSide[leftIndex] <= rightSide[rightIndex]:
+            list[mainIndex] = leftSide[leftIndex]
+            leftIndex += 1
+        else:
+            list[mainIndex] = rightSide[rightIndex]
+            rightIndex += 1
+        mainIndex += 1
+
+    for index in range(leftIndex, len(leftSide)):
+        list[mainIndex] = leftSide[index]
+        mainIndex += 1
+
+    for index in range(rightIndex, len(rightSide)):
+        list[mainIndex] = rightSide[index]
+        mainIndex += 1
+
+    print(list)
     return list
 
 
