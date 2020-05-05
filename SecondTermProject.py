@@ -1,9 +1,6 @@
 # A01374561 José Francisco Murillo Lozano
 # A01376544 Mariana Paola Caballero Cabrera
-# A01377744 Alejadro Torices Oliva
-
-
-import math
+# A01377744 Alejandro Torices Oliva
 
 
 def bucketSort(list):
@@ -35,8 +32,6 @@ def bucketSort(list):
     return new_list
 
 
-
-
 def insertionSort(list):
     for index in range(1, len(list)):
         value = list[index]
@@ -47,7 +42,6 @@ def insertionSort(list):
                 list.insert(indexSort, value)
                 break
     return list
-
 
 
 def bubbleSort(list):
