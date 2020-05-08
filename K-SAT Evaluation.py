@@ -29,7 +29,6 @@ def leerArchivo(filePath):
             valores.append(int(linea[indexStrToInt]))
         orForClausula = False
         for value in valores:
-            print(value)
             if value < 0:
                 orForClausula = orForClausula or not variables[abs(value)-1]
             else:
@@ -48,7 +47,7 @@ def resultadoFinal(resultadoClausulas):
 
 
 def main():
-    resultadoClausulas = leerArchivo("Instance_3SAT.txt")#input("Nombre del archivo con las condiciones del problema: "))
+    resultadoClausulas = leerArchivo(input("Name of the file with problem conditions: "))
     print(resultadoFinal(resultadoClausulas))
 
 main()
