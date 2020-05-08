@@ -45,7 +45,6 @@ def resultadoFinal(resultadoClausulas):
     return resultadoFinal
 
 
-
 def main():
     resultadoClausulas = leerArchivo(input("Name of the file with problem conditions: "))
     print(resultadoFinal(resultadoClausulas))
