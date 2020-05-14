@@ -27,9 +27,15 @@ def readCSV(fileName):
     file = open(fileName, "r")
     strList = ""
     line = file.readline()
+    for char in line:
+        if char in "{}":
+            line = line.replace(char, "")
     while line != "":
+
         strList += line
         line = file.readline()
+
+
     strList = strList.split(",")
     file.close()
 
@@ -86,11 +92,12 @@ def printTree(node, level):
 
 
 def main():
+    print("\n Aesthetic binary tree:")
     list = readCSV("prueba.txt")
     root = binaryTreeGen(list)
     printTree(root, 0)
     for n in tree:
-       print(str(n).center(100))
+       print(str(n).center(150))
 
 
 main()
