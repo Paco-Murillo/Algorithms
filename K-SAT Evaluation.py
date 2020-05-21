@@ -1,6 +1,6 @@
 # A01374561 José Francisco Murillo Lozano
 # A01376544 Mariana Paola Caballero Cabrera
-# A01377744 Alejadro Torices Oliva
+# A01377744 Alejandro Torices Oliva
 
 
 def obtenerParam(linea):
