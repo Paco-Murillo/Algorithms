@@ -46,7 +46,7 @@ def resultadoFinal(resultadoClausulas):
 
 
 def main():
-    resultadoClausulas = leerArchivo(input("Name of the file with problem conditions: "))
+    resultadoClausulas = leerArchivo("Instance_3SAT.txt")  # input("Name of the file with problem conditions: "))
     print(resultadoFinal(resultadoClausulas))
 
 main()
